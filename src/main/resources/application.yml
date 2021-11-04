@@ -1,0 +1,20 @@
+server:
+  port: 9000
+
+spring:
+  thymeleaf:
+    cache: false
+    prefix: classpath:/templates/thymeleaf/
+    suffix: .html
+    view-names: "*.html"
+
+alipay:
+  app_id: 店家的APPID
+  merchant_private_key: 商家私钥
+  alipay_public_key: 支付宝公钥
+  notify_url: 异步通知地址
+  return_url: 同步通知地址
+  sign_type: RSA2
+  charset: utf-8
+  format: json
+  gateway_url: https://openapi.alipaydev.com/gateway.do
